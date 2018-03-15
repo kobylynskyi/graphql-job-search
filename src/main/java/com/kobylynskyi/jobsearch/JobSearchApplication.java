@@ -1,4 +1,4 @@
-package com.kobylynskyi.graphql;
+package com.kobylynskyi.jobsearch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

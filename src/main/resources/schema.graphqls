@@ -1,0 +1,21 @@
+schema {
+    query: Query
+}
+
+type Query {
+    companies: [Company]
+    company(name: String!): Company
+}
+
+type Company {
+    id: String
+    name: String
+    jobs: [Job]
+}
+
+type Job {
+    id: String
+    title: String
+    location: String
+    salary: Int
+}
