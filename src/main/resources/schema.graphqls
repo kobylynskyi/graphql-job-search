@@ -1,10 +1,16 @@
 schema {
     query: Query
+    mutation: Mutation
 }
 
 type Query {
     companies: [Company]
     company(name: String!): Company
+}
+
+type Mutation {
+    createCompany(name: String!): Company
+    createJob(companyId: String!, title: String!, location: String, salary: Int!): Job
 }
 
 type Company {
